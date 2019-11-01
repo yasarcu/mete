@@ -1,0 +1,12 @@
+button {
+    font-size: 100px;
+    font-style: italic;
+    float: left;
+    margin: 7px;
+    background-color: bisque;
+    border-radius: 7px;
+}
+
+body {
+    background-color: burlywood;
+}
