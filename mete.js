@@ -1,4 +1,4 @@
-    function play() {
-    var audio=document.getElementById("sesSifir");
+    function play(deger) {
+    var audio=document.getElementById(deger);
     audio.play();
 }

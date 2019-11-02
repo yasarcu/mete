@@ -9,18 +9,15 @@
     <title>Document</title>
 </head>
 <body id="boddy">
-    <button name="sifir" onclick="play()">0</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>10</button>
+    <button value="sifir" onclick="play(this.value)">0</button>
+    <button value="bir" onclick="play(this.value)">1</button>
+    <button value="iki" onclick="play(this.value)">2</button>
+    <button value="uc" onclick="play(this.value)">3</button>
+    <button value="dort" onclick="play(this.value)">4</button>
+    <button value="bes" onclick="play(this.value)">5</button>
 
-    <audio id="sesSifir" src="sesler/sifir.mp3"></audio>
+    <audio id="sifir" src="sesler/sifir.mp3"></audio>
+    <audio id="bir" src="sesler/BirMete.ogg"></audio>
+    <audio id="iki" src="sesler/IkiMete.ogg"></audio>
 </body>
 </html>
