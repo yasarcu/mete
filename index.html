@@ -9,18 +9,23 @@
     <title>Metenin sayilari</title>
 </head>
 <body id="boddy">
-    <button value="sifir" onclick="play(this.value)">0</button>
-    <button value="bir" onclick="play(this.value)">1</button>
-    <button value="iki" onclick="play(this.value)">2</button>
-    <button value="uc" onclick="play(this.value)">3</button>
-    <button value="dort" onclick="play(this.value)">4</button>
-    <button value="bes" onclick="play(this.value)">5</button>
-    <button value="alti" onclick="play(this.value)">6</button>
-    <button value="yedi" onclick="play(this.value)">7</button>
-    <button value="sekiz" onclick="play(this.value)">8</button>
-    <button value="dokuz" onclick="play(this.value)">9</button>
-    <button value="on" onclick="play(this.value)">10</button>
-
+    <!--onclick="play(this.value, this) sadece this buttonun arka planinin rengini degistirmek icin kullanilir -->
+    <button value="sifir" onclick="play(this.value, this)">0</button>
+    <button value="bir" onclick="play(this.value, this)">1</button>
+    <button value="iki" onclick="play(this.value, this)">2</button>
+    <button value="uc" onclick="play(this.value, this)">3</button>
+    <button value="dort" onclick="play(this.value, this)">4</button>
+    <button value="bes" onclick="play(this.value, this)">5</button>
+    <button value="alti" onclick="play(this.value, this)">6</button>
+    <button value="yedi" onclick="play(this.value, this)">7</button>
+    <button value="sekiz" onclick="play(this.value, this)">8</button>
+    <button value="dokuz" onclick="play(this.value, this)">9</button>
+    <button value="on" onclick="play(this.value, this)">10</button>
+    <button value="mete" onclick="play(this.value, this)">Mete</button>
+    <button value="efe" onclick="play(this.value, this)">Efe</button>
+    <!-- <button value="mete" onClick="play(this.value, this); window.location.reload()">Mete</button>
+    <button value="Sayfayi yenile" onClick="window.location.reload()">Efe</button> -->
+    
     <audio id="sifir" src="sesler/sifir.ogg"></audio>
     <audio id="bir" src="sesler/BirMete.ogg"></audio>
     <audio id="iki" src="sesler/IkiMete.ogg"></audio>
@@ -32,5 +37,7 @@
     <audio id="sekiz" src="sesler/sekizMete.ogg"></audio>
     <audio id="dokuz" src="sesler/dokozMete.ogg"></audio>
     <audio id="on" src="sesler/onMete.ogg"></audio>
+    <audio id="mete" src="sesler/mete.ogg"></audio>
+    <audio id="efe" src="sesler/efe.ogg"></audio>
 </body>
 </html>
