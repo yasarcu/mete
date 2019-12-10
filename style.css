@@ -8,6 +8,10 @@ button {
     border-radius: 15px;
 }
 
+#kos {
+    font-size: 1em;
+}
+
 body {
     background-color: #000;
 }
