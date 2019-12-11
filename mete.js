@@ -11,12 +11,12 @@ function play(deger, _deger) {
         _deger.style.backgroundColor = "#000";
     }
     besceTiklaAc = 5;
-    document.getElementById('kos').textContent = "Kosoferta.com " + besceTiklaAc.toString();
+    document.getElementById('kos').textContent = "kosoferta.com ";
     audio.play();
 }
 function kosoferta() {
     besceTiklaAc--;
-    document.getElementById('kos').textContent = "Kosoferta.com " + besceTiklaAc.toString();
+    document.getElementById('kos').textContent = "kosoferta.com " + besceTiklaAc.toString();
     if (besceTiklaAc == 0) {
         besceTiklaAc = 5;
         window.open("https://kosoferta.com");

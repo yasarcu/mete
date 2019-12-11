@@ -1,5 +1,6 @@
 button {
-    font-size: 5em;
+    width: 28%;
+    font-size: 4em;
     /* font-style: italic; */
     float: left;
     margin: 7px;
@@ -9,7 +10,8 @@ button {
 }
 
 #kos {
-    font-size: 2em;
+    font-size: 0.8em;
+    margin: 2.5% 5px;
 }
 
 body {
