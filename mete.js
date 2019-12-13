@@ -15,6 +15,10 @@ function play(deger, _deger) {
     audio.play();
 }
 function kosoferta() {
+     let genislik = document.getElementsByClassName('but').offsetWidth;
+     let uzunluk = document.getElementsByClassName('but').offsetHeight;
+     document.getElementById('kos').style.width = genislik + 'px'; 
+     document.getElementById('kos').style.height = uzunluk + 'px'; 
     besceTiklaAc--;
     document.getElementById('kos').textContent = "kosoferta.com " + besceTiklaAc.toString();
     if (besceTiklaAc == 0) {
