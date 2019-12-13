@@ -1,4 +1,10 @@
-var besceTiklaAc = 5;
+var besceTiklaAc = 3;
+window.onload = function () {
+    let genislik = document.getElementById('omnom').offsetWidth;
+    let uzunluk = document.getElementById('omnom').offsetHeight;
+    document.getElementById('kos').style.width = genislik + 'px';
+    document.getElementById('kos').style.height = uzunluk + 'px';
+}
 
 function play(deger, _deger) {
     var audio = document.getElementById(deger);
@@ -10,19 +16,16 @@ function play(deger, _deger) {
     else {
         _deger.style.backgroundColor = "#000";
     }
-    besceTiklaAc = 5;
+    besceTiklaAc = 3;
     document.getElementById('kos').textContent = "kosoferta.com ";
+    // @ts-ignore
     audio.play();
 }
 function kosoferta() {
-     let genislik = document.getElementsByClassName('but').offsetWidth;
-     let uzunluk = document.getElementsByClassName('but').offsetHeight;
-     document.getElementById('kos').style.width = genislik + 'px'; 
-     document.getElementById('kos').style.height = uzunluk + 'px'; 
     besceTiklaAc--;
     document.getElementById('kos').textContent = "kosoferta.com " + besceTiklaAc.toString();
     if (besceTiklaAc == 0) {
-        besceTiklaAc = 5;
+        besceTiklaAc = 3;
         window.open("https://kosoferta.com");
     }
 }
