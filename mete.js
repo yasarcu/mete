@@ -17,13 +17,13 @@ function play(deger, _deger) {
         _deger.style.backgroundColor = "#000";
     }
     besceTiklaAc = 3;
-    document.getElementById('kos').textContent = "kosoferta.com ";
+    document.getElementById('kos').textContent = "Kosoferta ";
     // @ts-ignore
     audio.play();
 }
 function kosoferta() {
     besceTiklaAc--;
-    document.getElementById('kos').textContent = "kosoferta.com " + besceTiklaAc.toString();
+    document.getElementById('kos').textContent = "Kosoferta " + besceTiklaAc.toString();
     if (besceTiklaAc == 0) {
         besceTiklaAc = 3;
         window.open("https://kosoferta.com");
