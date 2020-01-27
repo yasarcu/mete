@@ -1,15 +1,34 @@
-var besceTiklaAc = 3;
-window.onload = function () {
-    let genislik = document.getElementById('omnom').offsetWidth;
-    let uzunluk = document.getElementById('omnom').offsetHeight;
-    document.getElementById('kos').style.width = genislik + 'px';
-    document.getElementById('kos').style.height = uzunluk + 'px';
-}
+// window.onload = function () {
+//     alert("welcome");
+// };
 
+// $( document ).ready(function() {
+//         alert( "Thanks for visiting!" ); 
+//     });
+
+var besceTiklaAc = 3;
+$(document).ready(function () {
+    // let genislik = document.getElementById('omnom').offsetWidth;
+    console.log("oldi");
+    var uzunluk = $('#omnom').height();
+    var genislik = $('#omnom').width();
+    $('#kos').height(uzunluk);
+    $('#kos').width(genislik);
+    // let uzunluk = document.getElementById('omnom').offsetHeight;
+    // document.getElementById('kos').style.width = genislik + 'px';
+    // document.getElementById('kos').style.height = uzunluk + 'px';
+});
+
+/**
+ * @param {string} deger
+ * @param {{ style: { backgroundColor: string; }; }} _deger
+ */
 function play(deger, _deger) {
     var audio = document.getElementById(deger);
+    // var audio = $("#deger");
     // ikinci defer buttona tiklaninca tekrar eski rengine donsun hatasina bak
     var sayiBack = _deger.style.backgroundColor;
+    // var sayiBack = _deger.css('backgroundColor');
     if (sayiBack != "rgb(227, 26, 23)") {
         _deger.style.backgroundColor = "#e31a17";
     }
