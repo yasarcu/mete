@@ -24,8 +24,8 @@ $(document).ready(function () {
      * @param {{ style: { backgroundColor: string; }; }} _deger
      */
 function play(deger, _deger) {
-    // var audio = document.getElementById(deger);
-    var audio = $("#deger");
+    var audio = document.getElementById(deger);
+    // var audio = $("#(deger)");
     // ikinci defer buttona tiklaninca tekrar eski rengine donsun hatasina bak
     // var sayiBack = _deger.style.backgroundColor;
     var sayiBack = $(_deger).css('background-color');
@@ -41,7 +41,7 @@ function play(deger, _deger) {
     // document.getElementById('kos').textContent = "Kosoferta ";
     $("#kos").text("Kosoferta ");
     // @ts-ignore
-    $("audio")[0].play();
+    audio.play();
 }
 function kosoferta() {
     besceTiklaAc--;
@@ -51,3 +51,8 @@ function kosoferta() {
         window.open("https://kosoferta.com");
     }
 }
+
+// function play() {
+//     var audio=document.getElementById("sesSifir");
+//     audio.play();
+// }
