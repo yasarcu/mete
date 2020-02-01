@@ -1,4 +1,4 @@
-button, #on {
+button, #omnom {
     width: 28%;
     font-size: 4em;
     /* font-style: italic; */
@@ -9,7 +9,7 @@ button, #on {
     border-radius: 15px;
 }
 
-#kos {
+#btnKosoferta {
     width: 28%;
     font-size: 1em;
     float: left;
